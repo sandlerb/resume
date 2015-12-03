@@ -1,69 +1,80 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
  
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Brett Sandler}
 
-% {E-mail}{mobilephone}{homepage}
-\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{http://www.yuanbin.me}
-% {E-mail}{mobilephone}
-%\basicContactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}
+% {E-mail}{mobilephone}{homepage}{address}
+\contactInfo{sandler.brett@gmail.com}{+1 (248) 508-7336}
+            {www.github.com/sandlerb}
+            {1602 Packard, Apt. B4, Ann Arbor, MI 48104}
  
+\section{\faWrench\ Experience}
+\jobheader{\textbf{Stratos Technologies}}{Embedded Engineer}
+          {May 2014 -- Present}
+My responsibilities include firmware development, manufacturing
+root causing, and test system development for a Bluetooth-enabled payment
+platform.  As a cross-functional embedded engineer I am involved in managing
+manufacturing engineering efforts, quality assurance, and product development.
+\begin{itemize}
+  \item Developed and maintained ultra low power firmware on a PIC18. This
+      included a minimal bootloader supporting over-the-air application
+      upgrades as well as the primary application
+  \item Performed power analysis and accelerated life testing to evaluate the
+      usable lifetime of the Stratos card
+  \item Re-engineered the software used in manufacturing test. This 
+      significantly increased visibility and confidence throughout the 
+      electronics manufacturing process
+  \item Supported global manufacturing partners remotely and on the factory floor
+\end{itemize}
+\vspace{3mm}
+
+\jobheader{\textbf{Quantum Signal}}{Engineering Intern}{May 2013 -- Dec. 2013}
+Contributed to various projects ranging from an in-house reflow oven to robotics
+simulation software.
+\begin{itemize}
+  \item Designed and programmed circuit boards for control systems
+  \item Wrote control software for lidar and time-of-flight cameras
+  \item Implemented new features in a robotics simulation application
+\end{itemize}
+\vspace{3mm}
+
+\jobheader{\textbf{Intergalactic Mobile Learning Center}}{Research Assistant}
+          {May 2012 -- May 2013}
+Developed the Personal Instrumentation Environment, an Android-based sensor
+kit intended for use in K-12 classrooms.
+\begin{itemize}
+  \item Designed a microcontroller-based front end for a modular set of sensors
+  \item Wrote firmware and an Android application to log data from the hardware
+      front end
+\end{itemize}
+\vspace{3mm}
+
+\jobheader{\textbf{Kurdak Research Group}}{Research Assistant}
+          {Sep. 2011 -- Sep. 2012}
+Çagliyan Kurdak's research concerns the subfield of mesoscopic physics. As a
+member of his group I was exposed to low temperature semiconductor research and
+provided the technical support to automate experiments.
+\begin{itemize}
+  \item Programmed the control board and PC front end for a system to analyze the
+      properties of an experimental lithium-ion battery network
+  \item Measured and analyzed rechargeable lithium-ion battery candidates for the
+      proposed network
+\end{itemize}
+
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
-
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
-\begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.3.0 support
-\end{itemize}
+\datedsubsection{\textbf{University of Michigan}, Ann Arbor}{Graduated 2013}
+\textit{B.S.} in Physics
+\newline
+\textit{Minor} in Computer Science
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
-\end{itemize}
-
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+  \item Programming Languages: C, Python, C++, Java
+  \item Platforms: Linux, Windows, Mac OS X, PIC, 8051, ARM
 \end{itemize}
 
 \end{document}

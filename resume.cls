@@ -27,12 +27,12 @@
 \RequirePackage[super]{nth}
 
 \titleformat{\section}         % Customise the \section command 
-  {\Large\scshape\raggedright} % Make the \section headers large (\Large),
+  {\LARGE\scshape\raggedright} % Make the \section headers large (\Large),
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
   [\titlerule]                 % Inserts a horizontal line after the heading
-\titlespacing*{\section}{0cm}{*1.8}{*1.8}
+\titlespacing*{\section}{0cm}{*3.6}{*1.8}
 
 \titleformat{\subsection}
   {\large\raggedright}
@@ -44,25 +44,35 @@
   \section[#1]{#1 \hfill #2}%
 }
 \newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{#1 \hfill #2}%
+  \subsection[#1]{#1 \hfill \small{#2}}%
+}
+\newcommand{\jobheader}[3]{%
+  \subsection[#1]{#1 \normalsize{\textit{#2}} \hfill \small{#3}}%
 }
 \newcommand{\datedline}[2]{%
   {\par #1 \hfill #2 \par}%
 }
 
 \newcommand{\name}[1]{
-  \centerline{\Huge{#1}}
-  \vspace{1.25ex}
+  \begin{center}
+  \Huge{#1}
+  \end{center}
+  \vspace{0.5ex}
 }
-\newcommand{\contactInfo}[3]{
-  \centerline{\large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}} \textperiodcentered \faLink\ {#3}}}
-  \vspace{1.5ex}
+\newcommand{\contactInfo}[4]{
+  \begin{center}
+  \large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}} \textperiodcentered \faLink\ {#3}}
+  \newline
+  \large{\faHome\ {#4}}
+  \end{center}
 }
 \newcommand{\basicContactInfo}[3]{
-  \centerline{\large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}}}}
+  \begin{center}
+  \large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}}}
+  \end{center}
   \vspace{1.5ex}
 }
-\newcommand{\role}[2]{
-  {\par \textit{#1} ~ #2 \par}
+\newcommand{\role}[1]{
+  {\par \textit{#1} \par}
   \vspace{0.85ex}
 }
