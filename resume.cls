@@ -63,7 +63,6 @@
   \begin{center}
   \large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}} \textperiodcentered \faLink\ {#3}}
   \newline
-  \large{\faHome\ {#4}}
   \end{center}
 }
 \newcommand{\basicContactInfo}[3]{
