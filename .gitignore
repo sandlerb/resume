@@ -39,7 +39,7 @@
 
 ############################################
 # do not upload secret infomation
-brett_sandler_resume.tex
-brett_sandler_resume.pdf
-brett_sandler_cover_letter.tex
-brett_sandler_cover_letter.pdf
+brett_sandler_resume*.tex
+brett_sandler_resume*.pdf
+brett_sandler_cover_letter*.tex
+brett_sandler_cover_letter*.pdf
