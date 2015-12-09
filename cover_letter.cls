@@ -36,7 +36,6 @@
   \begin{center}
   \large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}} \textperiodcentered \faLink\ {#3}}
   \newline
-  \large{\faHome\ {#4}}
   \end{center}
 }
 
@@ -54,7 +53,18 @@
   \vspace{6mm}
 }
 
+% TODO this cant be the right way to do this...
+\newcommand{\pgraph}[1]{
+  {\par #1}
+  \vspace{3mm}
+}
+
 \newcommand{\dear}[1]{
   {\par Dear #1,}
   \vspace{0.85ex}
+}
+
+\newcommand{\signoff}[1]{
+  \vspace{6mm}
+  {\par Best Regards,\par#1}
 }
