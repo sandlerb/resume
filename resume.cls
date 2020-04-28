@@ -47,7 +47,7 @@
   \subsection[#1]{#1 \hfill \small{#2}}%
 }
 \newcommand{\jobheader}[3]{%
-  \subsection[#1]{#1 \normalsize{\textit{#2}} \hfill \small{#3}}%
+  \subsection[#1]{#1 \normalsize{\textit{#2}} \hfill \newline \small{#3}}%
 }
 \newcommand{\datedline}[2]{%
   {\par #1 \hfill #2 \par}%
