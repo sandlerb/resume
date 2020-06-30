@@ -6,44 +6,38 @@
 \pagenumbering{gobble} % suppress displaying page number
 
 \name{Brett Sandler}
-
 \basicContactInfo{sandler.brett@gmail.com}{+1 (248) 508-7336}
  
 \section{\faWrench\ Experience}
 \jobheader{\textbf{Hyundai-Aptiv Autonomous Driving Joint Venture}}{Senior Software Engineer}
           {April 2018 -- present}
-My work at HAADJV (formerly a division of Aptiv) has focused primarily on middleware development,
-specifically the messaging infrastructure and camera data integration.
+Developed software for autonomous vehicles.
 \begin{itemize}
-  \item Implemented generic introspection support
-  \item Optimized message distribution latency
-  \item Added support for additional physical interfaces and observability features
-  \item Designed a generic event timing framework
-  \item Implemented an image pipeline to save and stream camera images to the perception system
+  \item Implemented generic message introspection support enabling quick and easy interprocess debugging
+  \item Designed a generic interprocess event timing framework for profiling on-vehicle data pipelines
+  \item Implemented a low latency image pipeline into the perception system
+  \item Contributed to various activities including middleware design, optimization,
+      observability improvements, and compute system design
 \end{itemize}
 \vspace{3mm}
 
 \jobheader{\textbf{Uber Advanced Technologies Group}}{Software Engineer}
           {February 2016 -- April 2018}
-At Uber ATG I worked on autonomous vehicles in two roles: as a tech lead for the Onboard Integration team and
-as an embedded software engineer.  As a tech lead I was responsible for the onboard runtime
-environment comprising sensor and device integration, software update, integration testing, and
-release and packaging tools.
+Developed software for autonomous vehicles. Tech lead on the Onboard Integration team for sensor
+and device integration, software update, integration testing, and release and packaging tools.
 \begin{itemize}
   \item Designed and implemented a common networking stack used on several in-house devices
   \item Ported and maintained a common bootloader
-  \item Wrote the initial embedded build and release tooling
-  \item Performed board and RTOS bring up
-  \item Maintained and contribued to the software update system
-  \item Integrated a third-party camera solution
-  \item Wrote integration test tooling to simplify running tests on real hardware
+  \item Wrote the initial firmware build, image generation, and release tooling
+  \item Maintained and contributed to the software update system
+  \item Integrated a surround camera system
+  \item Wrote a Python library to simplify and automate running integration tests on representative hardware
 \end{itemize}
 \vspace{3mm}
 
 \jobheader{\textbf{Stratos Technologies}}{Embedded Engineer}
           {May 2014 -- Dec. 2015}
-My responsibilities included the development of firmware and manufacturing
-test software for a Bluetooth-enabled payment platform.
+Developed firmware for a Bluetooth-enabled dynamic magstripe card.
 \begin{itemize}
   \item Developed low power firmware on a PIC18, including
       a minimal bootloader supporting over-the-air application upgrades
@@ -54,16 +48,16 @@ test software for a Bluetooth-enabled payment platform.
 \end{itemize}
 \vspace{3mm}
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{University of Michigan}, Ann Arbor}{Graduated 2013}
-\textit{B.S.} in Physics
-\newline
-\textit{Minor} in Computer Science
-
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
   \item Programming Languages: C++, C, Python
-  \item Platforms: Linux, FreeRTOS, ARM, PIC, 8051
+  \item Platforms: Linux, FreeRTOS, ARM, PIC
 \end{itemize}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{University of Michigan}}{Graduated 2013}
+\textit{B.S.} in Physics
+\newline
+\textit{Minor} in Computer Science
 
 \end{document}

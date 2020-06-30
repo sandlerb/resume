@@ -8,6 +8,8 @@
 \RequirePackage{xltxtra}                
 % use fontawesome
 \RequirePackage{fontawesome}
+% try to disable hyphenation
+\hyphenpenalty 10000
 
 \RequirePackage[
 	a4paper,
@@ -38,7 +40,7 @@
   {\large\raggedright}
   {}{0em}
   {}
-\titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
+\titlespacing*{\subsection}{0cm}{*1.2}{*0.6}
 
 \newcommand{\datedsection}[2]{%
   \section[#1]{#1 \hfill #2}%
@@ -69,7 +71,6 @@
   \begin{center}
   \large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}}}
   \end{center}
-  \vspace{1.5ex}
 }
 \newcommand{\role}[1]{
   {\par \textit{#1} \par}
